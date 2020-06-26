@@ -55,12 +55,7 @@ D_customer c right outer join D_offers o
 on c.segment = o.segment
 where o.segment is null
 
--- 7- full outer join
-select c.*, o.discount from
-D_customer c full outer join D_offers o
-on c.segment = o.segment
-
--- 8- full outer join with exclusion
+-- 7- full outer join with exclusion
 select c.*, o.discount from
 D_customer c full outer join D_offers o
 on c.segment = o.segment
