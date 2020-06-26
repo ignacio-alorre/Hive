@@ -46,12 +46,12 @@ on c.segment = o.segment
 where o.segment is null
 
 -- 5- right outer join
-select c.*, o.discount from
+select c.id, c.name, o.* from
 D_customer c right outer join D_offers o
 on c.segment = o.segment
 
 -- 6- right outer join with exclusion
-select c.*, o.discount from
+select c.id, c.name, o.* from
 D_customer c right outer join D_offers o
 on c.segment = o.segment
 where c.segment is null
