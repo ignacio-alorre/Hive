@@ -21,7 +21,8 @@ INSERT INTO TABLE D_offers VALUES
 ('s1', 10), 
 (null, 20), 
 ('s3', 30),
-('s3', 40)
+('s3', 40),
+('s4', 80)
 
 -- 1- join [inner join]
 select c.*, o.discount from
@@ -53,7 +54,7 @@ on c.segment = o.segment
 select c.*, o.discount from
 D_customer c right outer join D_offers o
 on c.segment = o.segment
-where o.segment is null
+where c.segment is null
 
 -- 7- full outer join with exclusion
 select c.*, o.discount from
