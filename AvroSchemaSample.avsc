@@ -1,0 +1,42 @@
+{
+	"type" : "record",
+	"name" : "sample_schema",
+	"doc" : "sample_schema",
+	"fields" : [{
+		"name" : "string_field",
+		"type" : [ "string", "null"],
+	"columnName" : "string_field"
+	},{
+		"name" : "array_of_maps_field",
+		"type" : ["null", {
+				"type" : "array",
+				"items" : 
+					["null", {
+						"type" : "map",
+						"values" : ["null", "string"]
+					}
+				]
+			}
+		]
+	},{
+    "name" : "map_field",
+    "type" : ["null", {
+              "type" : "map",
+              "values" : ["null", "string"]
+            }
+      ],
+    "columnName" : "map_field"
+	},{
+		"name" : "array_field",
+		"type" : ["null", {
+				"type" : "array",
+				"items" : 
+					["null",
+						"string"
+					]
+				}
+		]
+	}       
+  ],
+  "tableName" : "SAMPLE_TABLE"
+}
