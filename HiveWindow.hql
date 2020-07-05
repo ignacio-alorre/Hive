@@ -99,10 +99,6 @@ FROM D_sensor
 where sensor = 'S1';
 
 
-
-https://stackoverflow.com/a/7747342/1773841
-
-
 -- CUME_DIST
 -- PERCENT_RANK
 SELECT sensor, value,
