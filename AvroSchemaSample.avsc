@@ -19,6 +19,16 @@
 			}
 		]
 	},{
+		"name" : "array_strings",
+		"type" : ["null", {
+				"type" : "array",
+				"items" : [
+					"null",
+					"string"
+					 ]
+			}
+		]
+	},{
     "name" : "map_field",
     "type" : ["null", {
               "type" : "map",
